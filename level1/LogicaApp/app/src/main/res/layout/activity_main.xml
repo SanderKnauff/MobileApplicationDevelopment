@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+    <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/conjunction_and"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    HEADER  -->
+    <TextView
+            android:id="@+id/headerA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a"
+            app:layout_constraintEnd_toStartOf="@+id/headerB"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/headerTTA"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <TextView
+            android:id="@+id/headerB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/b"
+            app:layout_constraintEnd_toStartOf="@id/headerInput"
+            app:layout_constraintStart_toEndOf="@id/headerA"
+            app:layout_constraintBottom_toTopOf="@id/headerTTB"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <TextView
+            android:id="@+id/headerInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a_and_b"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/headerB"
+            app:layout_constraintBottom_toTopOf="@id/inputResultTT"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <!--    True True   -->
+    <TextView
+            android:id="@+id/headerTTA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bool_true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/headerTTB"
+            app:layout_constraintBottom_toTopOf="@id/headerTFA"
+            app:layout_constraintTop_toBottomOf="@id/headerA" />
+
+    <TextView
+            android:id="@+id/headerTTB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bool_true"
+            app:layout_constraintEnd_toStartOf="@id/inputResultTT"
+            app:layout_constraintStart_toEndOf="@id/headerTTA"
+            app:layout_constraintBottom_toTopOf="@id/headerTFB"
+            app:layout_constraintTop_toBottomOf="@id/headerB" />
+
+    <EditText
+            android:id="@+id/inputResultTT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/headerTTB"
+            app:layout_constraintBottom_toTopOf="@id/inputResultTF"
+            app:layout_constraintTop_toBottomOf="@id/headerInput" />
+
+    <!--    True False  -->
+    <TextView
+            android:id="@+id/headerTFA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bool_true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/headerTFB"
+            app:layout_constraintBottom_toTopOf="@id/headerFTA"
+            app:layout_constraintTop_toBottomOf="@id/headerTTA" />
+
+    <TextView
+            android:id="@+id/headerTFB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bool_false"
+            app:layout_constraintEnd_toStartOf="@id/inputResultTF"
+            app:layout_constraintStart_toEndOf="@id/headerTFA"
+            app:layout_constraintBottom_toTopOf="@id/headerFTB"
+            app:layout_constraintTop_toBottomOf="@id/headerTTB" />
+
+    <EditText
+            android:id="@+id/inputResultTF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/headerTFB"
+            app:layout_constraintBottom_toTopOf="@id/inputResultFT"
+            app:layout_constraintTop_toBottomOf="@id/inputResultTT" />
+
+    <!--    False True  -->
+    <TextView
+            android:id="@+id/headerFTA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bool_false"
+            app:layout_constraintEnd_toStartOf="@+id/headerFTB"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/headerFFA"
+            app:layout_constraintTop_toBottomOf="@id/headerTFA" />
+
+    <TextView
+            android:id="@+id/headerFTB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bool_true"
+            app:layout_constraintEnd_toStartOf="@id/inputResultFT"
+            app:layout_constraintStart_toEndOf="@id/headerFTA"
+            app:layout_constraintBottom_toTopOf="@id/headerFFB"
+            app:layout_constraintTop_toBottomOf="@id/headerTFB" />
+
+    <EditText
+            android:id="@+id/inputResultFT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/headerFTB"
+            app:layout_constraintBottom_toTopOf="@id/inputResultFF"
+            app:layout_constraintTop_toBottomOf="@id/inputResultTF" />
+
+    <!--    False False -->
+    <TextView
+            android:id="@+id/headerFFA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bool_false"
+            app:layout_constraintEnd_toStartOf="@+id/headerFFB"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/buttonSubmit"
+            app:layout_constraintTop_toBottomOf="@id/headerFTA" />
+
+    <TextView
+            android:id="@+id/headerFFB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bool_false"
+            app:layout_constraintEnd_toStartOf="@id/inputResultFF"
+            app:layout_constraintStart_toEndOf="@id/headerFFA"
+            app:layout_constraintBottom_toTopOf="@id/buttonSubmit"
+            app:layout_constraintTop_toBottomOf="@id/headerFTB" />
+
+    <EditText
+            android:id="@+id/inputResultFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/headerFFB"
+            app:layout_constraintBottom_toTopOf="@id/buttonSubmit"
+            app:layout_constraintTop_toBottomOf="@id/inputResultFT" />
+
+    <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            app:layout_constraintTop_toBottomOf="@id/headerFFB"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
