@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">UserProfileApp</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_create_profile">CreateProfileActivity</string>
+    <string name="first_name">First Name</string>
+    <string name="description">Description</string>
+    <string name="last_name">Last Name</string>
+    <string name="profile_picture">Profile picture</string>
+    <string name="confirm">Confirm</string>
+    <string name="open_picture_gallery">Open Picture Gallery</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="firstNameLastName">%s %s</string>
+    <string name="missingFirstName">First name is required</string>
+    <string name="missingLastName">Last name is required</string>
+    <string name="missingDescription">Description is required</string>
+</resources>
