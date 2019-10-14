@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvInstructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/instructions"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESULT"
+        app:layout_constraintTop_toBottomOf="@id/tvInstructions"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvVersus"/>
+
+    <ImageView
+        android:id="@+id/ivChoicePlayer"
+        android:layout_width="144dp"
+        android:layout_height="144dp"
+        app:layout_constraintTop_toBottomOf="@id/tvResult"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvChoicePlayer"
+        android:text="@string/you"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ivChoicePlayer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btRock"/>
+
+    <TextView
+        android:id="@+id/tvVersus"
+        android:text="@string/versus"
+        android:textStyle="italic"
+        android:textSize="12pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvResult"
+        app:layout_constraintStart_toEndOf="@id/ivChoicePlayer"
+        app:layout_constraintEnd_toStartOf="@id/ivChoiceCPU"
+        app:layout_constraintBottom_toTopOf="@id/btPaper"
+        />
+
+    <ImageView
+        android:id="@+id/ivChoiceCPU"
+        android:layout_width="144dp"
+        android:layout_height="144dp"
+        app:layout_constraintTop_toBottomOf="@id/tvResult"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvChoiceCPU"
+        android:text="@string/computer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ivChoiceCPU"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btScissors"/>
+
+    <ImageView
+        android:id="@+id/btRock"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rock"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btPaper"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/btPaper"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/paper"
+        app:layout_constraintStart_toEndOf="@id/btRock"
+        app:layout_constraintEnd_toStartOf="@id/btScissors"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/btScissors"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/scissors"
+        app:layout_constraintStart_toEndOf="@id/btPaper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
