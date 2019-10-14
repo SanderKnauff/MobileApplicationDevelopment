@@ -25,7 +25,7 @@ import java.util.*
 class MainActivity : AppCompatActivity() {
 
     private lateinit var gameHistoryRepository: GameHistoryRepository
-    private var products = mutableListOf<Game>()
+    private var games = mutableListOf<Game>()
     private val mainScope = CoroutineScope(Dispatchers.Main)
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
         ivChoiceCPU.setImageResource(cpuMove.drawableId)
         tvResult.setText(gameResult.message)
             mainScope.launch {
-                val product = Game(
+                val game = Game(
                     date = Date(),
                     playerMove = playerMove,
                     cpuMove = cpuMove,
@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
                 )
 
                 withContext(Dispatchers.IO) {
-                    gameHistoryRepository.insertGame(product)
+                    gameHistoryRepository.insertGame(game)
                 }
             }
     }

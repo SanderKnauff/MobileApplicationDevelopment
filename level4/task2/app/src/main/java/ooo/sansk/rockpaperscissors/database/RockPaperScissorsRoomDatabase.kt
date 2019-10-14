@@ -17,7 +17,7 @@ abstract class RockPaperScissorsRoomDatabase : RoomDatabase() {
     abstract fun gameDao(): GameDao
 
     companion object {
-        private const val DATABASE_NAME = "SHOPPING_LIST_DATABASE"
+        private const val DATABASE_NAME = "ROCK_PAPER_SCISSORS_DATABASE"
 
         @Volatile
         private var rockPaperScissorsRoomDatabaseInstance: RockPaperScissorsRoomDatabase? = null

@@ -13,10 +13,10 @@ interface GameDao {
     suspend fun getAllGames(): List<Game>
 
     @Insert
-    suspend fun insertGame(product: Game)
+    suspend fun insertGame(game: Game)
 
     @Delete
-    suspend fun deleteGame(product: Game)
+    suspend fun deleteGame(game: Game)
 
     @Query("DELETE FROM game_table")
     suspend fun deleteAllGames()

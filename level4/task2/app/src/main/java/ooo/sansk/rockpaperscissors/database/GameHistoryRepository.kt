@@ -17,12 +17,12 @@ class GameHistoryRepository(context: Context) {
         return gameDao.getAllGames()
     }
 
-    suspend fun insertGame(product: Game) {
-        gameDao.insertGame(product)
+    suspend fun insertGame(game: Game) {
+        gameDao.insertGame(game)
     }
 
-    suspend fun deleteGame(product: Game) {
-        gameDao.deleteGame(product)
+    suspend fun deleteGame(game: Game) {
+        gameDao.deleteGame(game)
     }
 
     suspend fun deleteAllGames() {
