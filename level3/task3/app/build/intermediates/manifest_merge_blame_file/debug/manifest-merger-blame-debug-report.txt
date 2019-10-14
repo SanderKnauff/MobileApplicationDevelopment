@@ -1,0 +1,77 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="ooo.sansk.userprofileapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/home/sanderknauff/AndroidStudioProjects/MD/Level3/task1/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->/home/sanderknauff/AndroidStudioProjects/MD/Level3/task1/app/src/main/AndroidManifest.xml
+10
+11    <application
+11-->/home/sanderknauff/AndroidStudioProjects/MD/Level3/task1/app/src/main/AndroidManifest.xml:5:5-35:19
+12        android:allowBackup="true"
+12-->/home/sanderknauff/AndroidStudioProjects/MD/Level3/task1/app/src/main/AndroidManifest.xml:6:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.1.0] /home/sanderknauff/.gradle/caches/transforms-2/files-2.1/9c933b15d9f93e76e4d82ea7601e25c9/core-1.1.0/AndroidManifest.xml:24:18-86
+14        android:debuggable="true"
+15        android:icon="@mipmap/ic_launcher"
+15-->/home/sanderknauff/AndroidStudioProjects/MD/Level3/task1/app/src/main/AndroidManifest.xml:7:9-43
+16        android:label="@string/app_name"
+16-->/home/sanderknauff/AndroidStudioProjects/MD/Level3/task1/app/src/main/AndroidManifest.xml:8:9-41
+17        android:roundIcon="@mipmap/ic_launcher_round"
+17-->/home/sanderknauff/AndroidStudioProjects/MD/Level3/task1/app/src/main/AndroidManifest.xml:9:9-54
+18        android:supportsRtl="true"
+18-->/home/sanderknauff/AndroidStudioProjects/MD/Level3/task1/app/src/main/AndroidManifest.xml:10:9-35
+19        android:testOnly="true"
+20        android:theme="@style/AppTheme" >
+20-->/home/sanderknauff/AndroidStudioProjects/MD/Level3/task1/app/src/main/AndroidManifest.xml:11:9-40
+21        <activity
+21-->/home/sanderknauff/AndroidStudioProjects/MD/Level3/task1/app/src/main/AndroidManifest.xml:12:9-20:20
+22            android:name="ooo.sansk.userprofileapp.ProfileActivity"
+22-->/home/sanderknauff/AndroidStudioProjects/MD/Level3/task1/app/src/main/AndroidManifest.xml:13:13-44
+23            android:label="@string/title_activity_profile"
+23-->/home/sanderknauff/AndroidStudioProjects/MD/Level3/task1/app/src/main/AndroidManifest.xml:14:13-59
+24            android:parentActivityName="ooo.sansk.userprofileapp.CreateProfileActivity"
+24-->/home/sanderknauff/AndroidStudioProjects/MD/Level3/task1/app/src/main/AndroidManifest.xml:15:13-64
+25            android:theme="@style/AppTheme.NoActionBar" >
+25-->/home/sanderknauff/AndroidStudioProjects/MD/Level3/task1/app/src/main/AndroidManifest.xml:16:13-56
+26            <meta-data
+26-->/home/sanderknauff/AndroidStudioProjects/MD/Level3/task1/app/src/main/AndroidManifest.xml:17:13-19:82
+27                android:name="android.support.PARENT_ACTIVITY"
+27-->/home/sanderknauff/AndroidStudioProjects/MD/Level3/task1/app/src/main/AndroidManifest.xml:18:17-63
+28                android:value="ooo.sansk.userprofileapp.CreateProfileActivity" />
+28-->/home/sanderknauff/AndroidStudioProjects/MD/Level3/task1/app/src/main/AndroidManifest.xml:19:17-79
+29        </activity>
+30        <activity
+30-->/home/sanderknauff/AndroidStudioProjects/MD/Level3/task1/app/src/main/AndroidManifest.xml:21:9-24:58
+31            android:name="ooo.sansk.userprofileapp.CreateProfileActivity"
+31-->/home/sanderknauff/AndroidStudioProjects/MD/Level3/task1/app/src/main/AndroidManifest.xml:22:13-50
+32            android:label="@string/title_activity_create_profile"
+32-->/home/sanderknauff/AndroidStudioProjects/MD/Level3/task1/app/src/main/AndroidManifest.xml:23:13-66
+33            android:theme="@style/AppTheme.NoActionBar" />
+33-->/home/sanderknauff/AndroidStudioProjects/MD/Level3/task1/app/src/main/AndroidManifest.xml:24:13-56
+34        <activity
+34-->/home/sanderknauff/AndroidStudioProjects/MD/Level3/task1/app/src/main/AndroidManifest.xml:25:9-34:20
+35            android:name="ooo.sansk.userprofileapp.SplashActivity"
+35-->/home/sanderknauff/AndroidStudioProjects/MD/Level3/task1/app/src/main/AndroidManifest.xml:26:13-43
+36            android:label="@string/title_activity_splash"
+36-->/home/sanderknauff/AndroidStudioProjects/MD/Level3/task1/app/src/main/AndroidManifest.xml:27:13-58
+37            android:theme="@style/SplashScreenTheme.NoActionBar" >
+37-->/home/sanderknauff/AndroidStudioProjects/MD/Level3/task1/app/src/main/AndroidManifest.xml:28:13-65
+38            <intent-filter>
+38-->/home/sanderknauff/AndroidStudioProjects/MD/Level3/task1/app/src/main/AndroidManifest.xml:29:13-33:29
+39                <action android:name="android.intent.action.MAIN" />
+39-->/home/sanderknauff/AndroidStudioProjects/MD/Level3/task1/app/src/main/AndroidManifest.xml:30:17-69
+39-->/home/sanderknauff/AndroidStudioProjects/MD/Level3/task1/app/src/main/AndroidManifest.xml:30:25-66
+40
+41                <category android:name="android.intent.category.LAUNCHER" />
+41-->/home/sanderknauff/AndroidStudioProjects/MD/Level3/task1/app/src/main/AndroidManifest.xml:32:17-77
+41-->/home/sanderknauff/AndroidStudioProjects/MD/Level3/task1/app/src/main/AndroidManifest.xml:32:27-74
+42            </intent-filter>
+43        </activity>
+44    </application>
+45
+46</manifest>
