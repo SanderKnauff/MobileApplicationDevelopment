@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Game Backlog</string>
+    <string name="header">Game backlog Kotlin</string>
+    <string name="released">Release: %s</string>
+    <string name="activity_title_edit">AddActivity</string>
+    <string name="clear_list">Clear Backlog</string>
+    <string name="label_title">Title</string>
+    <string name="label_platform">Platform</string>
+    <string name="label_day">Day</string>
+    <string name="label_month">Month</string>
+    <string name="label_year">Year</string>
+</resources>
