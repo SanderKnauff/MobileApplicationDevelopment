@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_containers">
+
+    <fragment
+        android:id="@+id/nav_containers"
+        android:name="ooo.sansk.dockerapp.ui.containers.ContainerFragment"
+        android:label="@string/menu_containers"
+        tools:layout="@layout/fragment_containers" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="ooo.sansk.dockerapp.ui.images.ImagesFragment"
+        android:label="@string/menu_images"
+        tools:layout="@layout/fragment_images" />
+</navigation>

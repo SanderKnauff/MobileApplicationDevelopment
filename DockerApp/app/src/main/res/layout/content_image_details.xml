@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_margin="32dp"
+    tools:context=".ImageDetailsActivity"
+    tools:showIn="@layout/activity_image_details">
+
+    <TextView
+        android:id="@+id/tvLabelVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_docker_version"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="7.3.4"/>
+
+    <TextView
+        android:id="@+id/tvLabelArch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_arch"
+        app:layout_constraintTop_toBottomOf="@id/tvVersion"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvArch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvVersion"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="x86-64"/>
+
+    <TextView
+        android:id="@+id/tvLabelSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_size"
+        app:layout_constraintTop_toBottomOf="@id/tvLabelArch"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvArch"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="123MB"/>
+
+    <TextView
+        android:id="@+id/tvLabelCreated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvLabelSize"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/label_created"/>
+
+    <TextView
+        android:id="@+id/tvCreated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="12 October 1996"/>
+
+    <Button
+        android:id="@+id/btnDeleteImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvLabelCreated"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/delete"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
